@@ -1,6 +1,46 @@
-*, *::after, *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/*Estilo do corpo para centrsalizar o card na tela*/
+body {
+    background-color: #f0f2f5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* O card - onde o box Model acontece */
+.card {
+    width: 300px;                /* Largura fixa da caixa */
+    background-color: white;     /* Cor de fundo */
+
+    /* Escapamentos */
+    padding: 20px;              /* Espaço interno (respiro do texto) */
+    margin: 50px auto;          /* 50px em cima em baixo e 'auto' centralizado horizontalmente */
+
+    /* Bordas e estetica */
+    border: 2px solid #ddd;    /* Borda simples */
+    border-radius: 15px;       /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Ajustando a imagem para caber dentro do card */
+.card img {
+    width: 100%;               /* A imagem ocupa toda a largura do card */
+    border-radius: 8px;        /* Bordas arredondadas para a imagem */
+    margin-bottom: 15px;      /* Espaço abaixo da imagem */
+}
+
+/* Estilo do título */
+.card h2 {
+    color: #333;              /* Cor do texto */
+    margin: 10px 0;             /* Espaço acima e abaixo do título */
+}
+
+/* Estilo do Botão */
+.botão-comprar {
+    background-color: #28a745; /* Cor de fundo do botão */
+    color: white;              /* Cor do texto do botão */
+    border: none;             /* Sem borda */
+    padding: 10px 20px;       /* Espaçamento interno do botão */
+    border-radius: 5px;       /* Bordas arredondadas do botão */
+    cursor: pointer;          /* Cursor de mão ao passar o mouse */
+    width: 100%;               /* O botão ocupa toda a largura do card */
+    font-size: 16px;          /* Tamanho da fonte do botão */
 
 }
